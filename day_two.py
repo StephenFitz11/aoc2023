@@ -1,6 +1,6 @@
 import re
 from Solution import Solution
-from inputs.two import day_two_inputs
+from inputs.two import day_two_test_inputs, day_two_inputs
 
 
 class DayTwo(Solution):
@@ -76,16 +76,10 @@ class DayTwo(Solution):
 
         print("Answer: ", answer)
 
-test_inputs = [
-    "Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green",
-    "Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue",
-    "Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red",
-    "Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red",
-    "Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green",
-]
+
 
 # env = 'test'
 env = 'solve'
-day_two = DayTwo(day_two_inputs, test_inputs, env)
+day_two = DayTwo(day_two_inputs, day_two_test_inputs, env)
 day_two.solve_part_one()
 day_two.solve_part_two()
